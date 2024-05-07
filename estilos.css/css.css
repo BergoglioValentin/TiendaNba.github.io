@@ -285,3 +285,58 @@ img{
 .remera__redes h3{
     margin-bottom: 0.3rem;
 }
+
+/** FUNTES **/
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /** Formularios **/
+ .formulario_contacto{
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .campos input{
+    width: 40rem;
+    text-align: center;
+    border: none;
+    border-bottom: 0.1rem solid black;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+ }
+
+ .campos textarea{
+    text-align: center;
+    resize: none;
+ }
+
+ .boton__formulario{
+    width: 40rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: background-color 1s ease;
+    gap: 1rem;
+    margin: 1rem;
+ }
+
+ .boton__formulario:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
