@@ -228,6 +228,8 @@ img{
     margin: 4rem;
 }
 
+/** Producto **/
+
 .remera__imagen{
     width: 100%;
 }
@@ -286,7 +288,20 @@ img{
     margin-bottom: 0.3rem;
 }
 
-/** FUNTES **/
+.frase{
+    text-align: center;
+    font-size: 4rem;
+    margin: 5rem;
+    font-style:oblique;
+    font-weight: bold;
+}
+
+.frase span{
+    color: #552583;
+    font-size: 4rem;
+}
+
+/** FUENTES **/
 
 .poppins-medium {
     font-family: "Poppins", sans-serif;
@@ -336,6 +351,7 @@ img{
  .campos textarea{
     text-align: center;
     resize: none;
+    border: none;
  }
  
  .boton__formulario{
@@ -354,9 +370,9 @@ img{
 }
 
 .pre__formulario{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
-    line-height: 3.3rem;
+    line-height: 4rem;
 }
 
  
