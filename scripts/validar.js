@@ -45,17 +45,17 @@ formulario.addEventListener("submit",function(e){
 
     if(!correoRegex.test(email)){
         mostrarError("Por favor ingrese un correo electronico valido..");
-        return;
+       return;
     }
 
     if(!telefonoRegex.test(telefono)){
         mostrarError("Por favor ingrese un telefono valido..");
         return;
     }
-    mostrarMensaje(`${nombre} ya recibimos correctamente tu mensaje...`);
+    mostrarMensaje(`${nombre} ya recibimos correctamente tu mensaje...la pagina se reiniciara en 5 segundos`);
 
     formulario.reset();
-});
+}); 
 
 function mostrarError(mensaje) {
     const alerta = document.createElement("p");
@@ -73,7 +73,7 @@ function mostrarMensaje(mensaje) {
     alerta.classList.add("correcto");
     formulario.appendChild(alerta);
     setTimeout(() => {
-        alerta.remove();
-    }, 15000);
+       window.location.reload();
+    }, 5000);
 }
 
