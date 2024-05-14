@@ -52,8 +52,9 @@ formulario.addEventListener("submit",function(e){
         mostrarError("Por favor ingrese un telefono valido..");
         return;
     }
-
     mostrarMensaje(`${nombre} ya recibimos correctamente tu mensaje...`);
+
+    formulario.reset();
 });
 
 function mostrarError(mensaje) {
@@ -71,5 +72,8 @@ function mostrarMensaje(mensaje) {
     alerta.textContent = mensaje;
     alerta.classList.add("correcto");
     formulario.appendChild(alerta);
+    setTimeout(() => {
+        alerta.remove();
+    }, 15000);
 }
 
