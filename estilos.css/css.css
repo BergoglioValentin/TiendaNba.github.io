@@ -375,6 +375,18 @@ img{
     line-height: 4rem;
 }
 
+.error{
+    background-color: red;
+    padding: 2rem;
+    border: 0.3rem solid black;
+}
+
+.correcto{
+    background-color: green;
+    padding: 2rem;
+    border: 0.3rem solid black;
+}
+
  
 
 
