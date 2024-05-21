@@ -13,7 +13,9 @@
     <link rel="icon" type="image/x-icon" href="imagenes/png.webp">
     
 </head>
+
 <body class="poppins-medium">
+    
     <header class="header">
         <a href="index.html">
             <img src="imagenes/nba-2.svg" alt="Logo NBA" class="header__logo">
@@ -26,7 +28,19 @@
         <a href="contacto.html" class="navegacion__enlaces">Contacto</a>
     </nav>
 
-    <main class="contenedor">
+    <main class="contenedor sombra borde">
+
+        <h1>Sigue con nosotros los PlayOff</h1>
+        <a href="producto.html"><img src="" alt="Image" id="img"></a>
+        <div class="contenedor--botones ">
+         <button onclick="next()" class="boton__formulario">
+           Siguiente
+         </button>
+         <button onclick="back()" class="boton__formulario">
+           Volver
+         </button>
+        </div>
+     
         <h1>Nuestros productos</h1>
         
         <div class="grid">
@@ -178,5 +192,7 @@
     <footer class="footer">
         <p class="footer__texto">Tienda NBA - Desarollado por VJB</p>
     </footer>
+
+    <script src="scripts/carrousel.js"></script>
 </body>
 </html>
